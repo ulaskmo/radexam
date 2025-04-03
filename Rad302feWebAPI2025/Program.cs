@@ -12,7 +12,7 @@ namespace Rad302feWebAPI2025
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            ActivityAPIClient.Track(StudentID: "S99999995", StudentName: "Paul Powell", activityName: "Rad302 fe March 2025", Task: "Seeding Data");
+            ActivityAPIClient.Track(StudentID: "S219971", StudentName: "ulas", activityName: "Rad302 fe March 2025", Task: "Seeding Data");
 
             // For CORS on localhost
             string LocalAllowSpecificOrigins = "_localAllowSpecificOrigins";

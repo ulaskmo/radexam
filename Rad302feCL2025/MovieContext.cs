@@ -26,12 +26,13 @@ namespace Rad302feCL2025
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
-            var myconnectionstring = "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = MovieDb-2025-SXXXXXXXXX";
-            optionsBuilder.UseSqlServer(myconnectionstring)
-              .LogTo(Console.WriteLine,
-                     new[] { DbLoggerCategory.Database.Command.Name },
-                     LogLevel.Information);
+            var myconnectionstring = "Data Source=MovieDb-2025.db";
+            optionsBuilder.UseSqlite(myconnectionstring)
+                .LogTo(Console.WriteLine,
+                    new[] { DbLoggerCategory.Database.Command.Name },
+                    LogLevel.Information);
         }
     }
 }
+
+// 
